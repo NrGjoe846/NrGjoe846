@@ -26,4 +26,4 @@ Feel free to reach out for collaborations or project discussions:
 - [LinkedIn](https://www.linkedin.com/in/nehemiah-nesanathan)
 - [Email Me](mailto:Nehemiahnesanathan@gmail.com)
 
-&copy; 2025 Nehemiah Nesanathan. All Rights Reserved.
+&copy; 2025 UNAI TECH. All Rights Reserved.
