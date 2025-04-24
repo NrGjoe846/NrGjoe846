@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <title>Technet Soft Systems</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-scholar.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <style>
+        /* Standardize course card dimensions */
+.events_item {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.events_item .thumb {
+  position: relative;
+  width: 100%;
+  padding-top: 66.67%; /* 3:2 aspect ratio */
+  overflow: hidden;
+}
+
+.events_item .thumb img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.events_item .down-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background: #fff;
+}
+
+.events_item .down-content h4 {
+  flex-grow: 1;
+  margin-bottom: 15px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.4;
+  min-height: 56px; /* Ensures consistent height for 2 lines of text */
+}
+
+.events_item .down-content p {
+  flex-grow: 1;
+  color: #666;
+  margin-bottom: 15px;
+  font-size: 14px;
+  min-height: 42px; /* Ensures consistent height for description */
+}
+
+.events_item .info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 15px;
+  border-top: 1px solid #eee;
+  margin-top: auto;
+}
+
+.events_item .category {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: rgba(244, 136, 64, 0.95);
+  color: #fff;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 5px;
+  z-index: 1;
+}
+
+/* Ensure all cards in a row have the same height */
+.row.event_box {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
+.row.event_box > [class*='col-'] {
+  display: flex;
+  flex-direction: column;
+}
+
+    </style>
+
+  </head>
+
+<body>
+
+  <!-- ------- Preloader Start ------- -->
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!-- ------- Preloader End ------- -->
+
+   <!-- ------- Header Area Start ------- -->
+   <header class="header-area header-sticky">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="main-nav">
+                    <!-- ------- Logo Start ------- -->
+                    <a href="index.html" class="logo">
+                        <img src="assets/images/newlogo.png" alt="Technet Soft Systems Logo">
+                    </a>
+                    <!-- ------- Logo End ------- -->
+                    
+                    <!-- ------- Menu Start ------- -->
+                    <ul class="nav">
+                      <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
+                      <li class="scroll-to-section"><a href="#services">Services</a></li>
+                      <li class="scroll-to-section"><a href="#about">About Us</a></li>
+                      <li class="scroll-to-section"><a href="#courses">Education</a></li>
+                      <li class="scroll-to-section"><a href="#contact">Contact</a></li>
+                      <li class="scroll-to-section"><a href="tel:+919444474756" class="cta-button">Call Us</a></li>
+                  </ul>
+                  <a class="menu-trigger">
+                      <span>Menu</span>
+                  </a>
+                    <!-- ------- Menu End ------- -->
+                </nav>
+            </div>
+        </div>
+    </div>
+  </header>
+  <!-- ------- Header Area End ------- -->
+
+
+<!-- ------- Hero Section ------- -->
+<div class="main-banner" id="top">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="owl-carousel owl-banner">
+                    <div class="item item-1">
+                        <div class="header-text">
+                            <span class="category">Our Expertise</span>
+                            <h2>Empowering Careers with Cutting-Edge Technology</h2>
+                            <p>At Technet
+ Soft Systems, we provide industry-focused education and IT services to help individuals and businesses thrive in the digital era.</p>
+                            <div class="buttons">
+                                <div class="main-button">
+                                    <a href="#courses">Explore Courses</a>
+                                </div>
+                                <div class="icon-button">
+                                    <a href="#courses"><i class="fa fa-play"></i> Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item item-2">
+                        <div class="header-text">
+                            <span class="category">Laptop & IT Services</span>
+                            <h2>Your One-Stop Solution for Computer & IT Needs</h2>
+                            <p>From laptop sales and repairs to software development, we offer end-to-end solutions to keep your devices and business running smoothly.</p>
+                            <div class="buttons">
+                                <div class="main-button">
+                                    <a href="tel:+919444474756">Call us</a>
+                                </div>
+                                <div class="icon-button">
+                                    <a href="#"><i class="fa fa-play"></i> View Services</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item item-3">
+                        <div class="header-text">
+                            <span class="category">Futuristic Learning</span>
+                            <h2>Innovative Education for All</h2>
+                            <p>Join our cutting-edge courses in AI, machine learning, and advanced computing to future-proof your career with the latest technology trends.</p>
+                            <div class="buttons">
+                                <div class="main-button">
+                                    <a href="#courses">Start Learning</a>
+                                </div>
+                                <div class="icon-button">
+                                    <a href="#"><i class="fa fa-play"></i> AI Learning Hub</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ------- Services Section ------- -->
+<div class="services section" id="services">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-6">
+                <div class="service-item">
+                    <div class="icon">
+                        <img src="assets/images/service-02.png" alt="Laptop Sales & Services">
+                    </div>
+                    <div class="main-content">
+                        <h4>Laptop & IT Services</h4>
+                        <p>We provide top-tier laptop and desktop sales, repairs, and maintenance with expert technical support.</p>
+                        <div class="main-button">
+                            <a href="tel:+919444474756">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="service-item">
+                    <div class="icon">
+                        <img src="assets/images/service-01.png" alt="Education & Courses">
+                    </div>
+                    <div class="main-content">
+                        <h4>Education & Certification</h4>
+                        <p>Join our professional training programs, from AI and coding to typewriting and business courses.</p>
+                        <div class="main-button">
+                            <a href="#courses">View Courses</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="service-item">
+                  <div class="icon">
+                      <img src="assets/images/service-03.png" alt="Internet Café & Printing">
+                  </div>
+                  <div class="main-content">
+                      <h4>Internet Café & Xerox Services</h4>
+                      <p>Experience high-speed internet, professional printing, photocopying, laminations, and digital services—all in one place.</p>
+                      <div class="main-button">
+                          <a href="https://maps.app.goo.gl/RpdDPgGpYni6b87a6">Visit Us</a>
+                      </div>
+                  </div>
+              </div>
+          </div>          
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- ------- About Us Section ------- -->
+<div class="section about-us" id="about">
+  <div class="container">
+      <div class="row">
+          <div class="col-lg-6 offset-lg-1">
+              <div class="accordion" id="accordionExample">
+                  <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingOne">
+                          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                              Our Journey & Legacy
+                          </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                              <strong>Founded in 1999,</strong> Technet
+ Soft Systems started with just 2 students and a vision to bring technology closer to learners. Over 26 years, we have empowered thousands of students and businesses with cutting-edge digital skills and IT solutions.
+                          </div>
+                      </div>
+                  </div>
+                  <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingTwo">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                              What Makes Us Different?
+                          </button>
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                              Unlike conventional institutions, we believe in hands-on, project-based learning powered by AI and interactive technologies. Our commitment to education, innovation, and real-world applications sets us apart from the rest.
+                          </div>
+                      </div>
+                  </div>
+                  <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingThree">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                              Our Vision & Mission
+                          </button>
+                      </h2>
+                      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                              Our mission is to bridge education and technology, making advanced learning accessible to all. We aim to empower students, businesses, and professionals with future-ready skills to excel in the digital world.
+                          </div>
+                      </div>
+                  </div>
+                  <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingFour">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                              Do We Offer Personalized Learning & Support?
+                          </button>
+                      </h2>
+                      <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                              Absolutely! At Technet
+ Soft Systems, we offer customized learning paths, one-on-one mentoring, and 24/7 AI-powered support to ensure every learner achieves their full potential.
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+
+          <div class="col-lg-5 align-self-center">
+              <div class="section-heading">
+                  <h6>About Us</h6>
+                  <h2>Empowering the Future with Technology & Education</h2>
+                  <p>At <strong>Technet Soft Systems</strong>, we blend innovation with education, offering industry-relevant courses, IT services, and business solutions to bridge the gap between learning and professional success.</p>
+                  <div class="main-button">
+                      <a href="#">Discover More</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+<!-- ------- Courses Section ------- -->
+<section class="section courses" id="courses" >
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <div class="section-heading">
+          <h6>Our Courses</h6>
+          <h2>Professional Courses & Training Programs</h2>
+        </div>
+      </div>
+    </div>
+    <ul class="event_filter">
+      <li><a class="is_active" href="#!" data-filter="*">Show All</a></li>
+      <li><a href="#!" data-filter=".tech">Technical</a></li>
+      <li><a href="#!" data-filter=".language">Language</a></li>
+      <li><a href="#!" data-filter=".diploma">Diploma</a></li>
+    </ul>
+    <div class="row event_box">
+      <!-- AI & Machine Learning -->
+      <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer tech">
+        <div class="events_item">
+          <div class="thumb">
+            <img src="https://images.pexels.com/photos/8386434/pexels-photo-8386434.jpeg" alt="AI Course">
+            <span class="category">Technical</span>
+          </div>
+          <div class="down-content">
+            <h4>Master AI & Machine Learning</h4>
+            <p>Advanced AI concepts and practical applications</p>
+            <div class="info">
+              <div class="enroll"><a href="tel:+919003011014">Enroll Now</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- System Programming -->
+      <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer diploma">
+        <div class="events_item">
+          <div class="thumb">
+            <img src="https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg" alt="System Programming">
+            <span class="category">Diploma</span>
+          </div>
+          <div class="down-content">
+            <h4>Diploma in System Programming</h4>
+            <p>Master system-level programming concepts</p>
+            <div class="info">
+              <div class="enroll"><a href="tel:+919003011014">Enroll Now</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Typing Course -->
+      <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer language">
+        <div class="events_item">
+          <div class="thumb">
+            <img src="https://images.pexels.com/photos/3059747/pexels-photo-3059747.jpeg" alt="Typing Course">
+            <span class="category">Language</span>
+          </div>
+          <div class="down-content">
+            <h4>Typing in Tamil & English</h4>
+            <p>Professional typing course in dual languages</p>
+            <div class="info">
+              <div class="enroll"><a href="tel:+919003011014">Enroll Now</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tally Financial Accounting -->
+      <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer tech">
+        <div class="events_item">
+          <div class="thumb">
+            <img src="https://images.pexels.com/photos/7681091/pexels-photo-7681091.jpeg" alt="Tally Course">
+            <span class="category">Technical</span>
+          </div>
+          <div class="down-content">
+            <h4>Tally Financial Accounting</h4>
+            <p>financial management training</p>
+            <div class="info">
+              <div class="enroll"><a href="tel:+919003011014">Enroll Now</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Professional Typewriting -->
+      <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer diploma">
+        <div class="events_item">
+          <div class="thumb">
+            <img src="https://images.pexels.com/photos/4348401/pexels-photo-4348401.jpeg" alt="Professional Typing">
+            <span class="category">Diploma</span>
+          </div>
+          <div class="down-content">
+            <h4>Professional Typewriting</h4>
+            <p>Advanced typing and keyboard skills</p>
+            <div class="info">
+              <div class="enroll"><a href="tel:+919003011014">Enroll Now</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- School Tuitions -->
+      <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer language">
+        <div class="events_item">
+          <div class="thumb">
+            <img src="https://images.pexels.com/photos/4145354/pexels-photo-4145354.jpeg" alt="School Tuitions">
+            <span class="category">Academic</span>
+          </div>
+          <div class="down-content">
+            <h4>School Tuitions</h4>
+            <p>Comprehensive academic support</p>
+            <div class="info">
+              <div class="enroll"><a href="tel:+919003011014">Enroll Now</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hardware & Networking -->
+      <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer diploma">
+        <div class="events_item">
+          <div class="thumb">
+            <img src="https://images.pexels.com/photos/257736/pexels-photo-257736.jpeg" alt="Hardware Course">
+            <span class="category">Diploma</span>
+          </div>
+          <div class="down-content">
+            <h4>Computer Hardware & Networking</h4>
+            <p>Complete hardware and networking skills</p>
+            <div class="info">
+              <div class="enroll"><a href="tel:+919003011014">Enroll Now</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Linux Administration -->
+      <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer tech">
+        <div class="events_item">
+          <div class="thumb">
+            <img src="https://images.pexels.com/photos/4164418/pexels-photo-4164418.jpeg" alt="Linux Course">
+            <span class="category">Technical</span>
+          </div>
+          <div class="down-content">
+            <h4>Linux System Administration</h4>
+            <p>Master Linux operating system</p>
+            <div class="info">
+              <div class="enroll"><a href="tel:+919003011014">Enroll Now</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Communicative English -->
+      <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer language">
+        <div class="events_item">
+          <div class="thumb">
+            <img src="https://images.pexels.com/photos/7092613/pexels-photo-7092613.jpeg" alt="English Course">
+            <span class="category">Language</span>
+          </div>
+          <div class="down-content">
+            <h4>Communicative English</h4>
+            <p>Enhance your English speaking skills</p>
+            <div class="info">
+              <div class="enroll"><a href="tel:+919003011014">Enroll Now</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- DCA -->
+      <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer diploma">
+        <div class="events_item">
+          <div class="thumb">
+            <img src="https://images.pexels.com/photos/1181677/pexels-photo-1181677.jpeg" alt="DCA Course">
+            <span class="category">Diploma</span>
+          </div>
+          <div class="down-content">
+            <h4>Diploma in Computer Application</h4>
+            <p>Complete computer fundamentals</p>
+            <div class="info">
+              <div class="enroll"><a href="tel:+919003011014">Enroll Now</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hindi Tuition -->
+      <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer language">
+        <div class="events_item">
+          <div class="thumb">
+            <img src="https://images.pexels.com/photos/6936080/pexels-photo-6936080.jpeg" alt="Hindi Course">
+            <span class="category">Language</span>
+          </div>
+          <div class="down-content">
+            <h4>Hindi Tuition (All Levels)</h4>
+            <p>Learn Hindi from basics to advanced</p>
+            <div class="info">
+              <div class="enroll"><a href="tel:+919003011014">Enroll Now</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Digital Designing -->
+      <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer diploma">
+        <div class="events_item">
+          <div class="thumb">
+            <img src="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg" alt="Design Course">
+            <span class="category">Diploma</span>
+          </div>
+          <div class="down-content">
+            <h4>Diploma in Digital Designing</h4>
+            <p>Master digital design tools and concepts</p>
+            <div class="info">
+              <div class="enroll"><a href="tel:+919003011014">Enroll Now</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+        <!-- Why Choose Us Section -->
+        <div class="row mt-5">
+            <div class="col-lg-12 text-center">
+                <div class="section-heading">
+                    <h6>Why Choose Technet Soft Systems?</h6>
+                    <h2>What Makes Our Courses Unique?</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ------- About Us Section ------- -->
+<div class="section about-us">
+  <div class="container">
+      <div class="row">
+          <div class="col-lg-6 offset-lg-1">
+              <div class="accordion" id="accordionExample">
+                  <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingOne">
+                          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Government Recognized Certification
+                          </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            <strong>Government Recognized Certification,</strong> that enhance your career prospects, validate your expertise, and open doors to high-paying opportunities in the tech industry. Our accredited programs ensure that you gain the skills and credentials employers seek.
+                          </div>
+                      </div>
+                  </div>
+                  <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingTwo">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Skilled Trainers
+                          </button>
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            <strong>Skilled Trainers</strong> with years of hands-on experience in artificial intelligence, software development, cybersecurity, and more. Benefit from practical insights, real-world case studies, and interactive training sessions tailored to industry demands.
+                          </div>
+                      </div>
+                  </div>
+                  <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingThree">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            State-of-the-Art Labs
+                          </button>
+                      </h2>
+                      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            <strong>Master cutting-edge technologies</strong> with hands-on training in fully equipped, state-of-the-art computer labs. Our labs feature the latest hardware, software, and simulation tools, allowing students to work on live projects and build job-ready skills.
+                          </div>
+                      </div>
+                  </div>
+                  <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingFour">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            AI-Powered Learning Experience
+                          </button>
+                      </h2>
+                      <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            <strong>Experience AI-powered adaptive learning</strong> with personalized mentoring, real-time guidance, and an innovative curriculum designed to meet the evolving demands of the digital age. Our smart learning system tracks progress and adapts courses to your learning pace, ensuring an engaging and effective educational journey.
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="col-lg-5 align-self-center">
+            <div class="section-heading">
+                <h6>Our Location</h6>
+                <h2>Visit Us at Technet Soft Systems</h2>
+                <p>Find us at our headquarters and explore our state-of-the-art facilities. We are here to assist you with cutting-edge IT services, training, and business solutions.</p>
+                <div class="map-container">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d124332.23756742297!2d80.10108604335939!3d13.138260699999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5265058028e0f9%3A0x27ad4310f016368b!2sTechnet%20SOFT%20SYSTEMS!5e0!3m2!1sen!2sin!4v1743249680591!5m2!1sen!2sin"                        width="100%" 
+                        height="250" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+                </div>
+                <div class="main-button">
+                    <a href="https://maps.app.goo.gl/RpdDPgGpYni6b87a6" target="_blank">Get Directions</a>
+                </div>
+            </div>
+        </div>
+        
+
+  <div class="section fun-facts">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="wrapper">
+            <div class="row">
+              <div class="col-lg-3 col-md-6">
+                <div class="counter">
+                  <h2 class="timer count-title count-number" data-to="20000" data-speed="1000"></h2>
+                   <p class="count-text ">Happy Students</p>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="counter">
+                  <h2 class="timer count-title count-number" data-to="20" data-speed="1000"></h2>
+                  <p class="count-text ">Courses</p>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="counter">
+                  <h2 class="timer count-title count-number" data-to="25" data-speed="1000"></h2>
+                  <p class="count-text ">Skilled Trainers</p>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="counter end">
+                  <h2 class="timer count-title count-number" data-to="26" data-speed="1000"></h2>
+                  <p class="count-text ">Years Experience</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="section testimonials">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5 align-self-center">
+                <div class="section-heading">
+                    <h6>CLIENT REVIEWS</h6>
+                    <h2>What Our Clients Say</h2>
+                    <p>Discover why professionals, students, and businesses trust Technet for top-notch digital solutions and seamless services.</p>
+                </div>
+            </div>
+            <div class="col-lg-7">
+                <div class="owl-carousel owl-testimonials">
+                    <div class="item">
+                        <p>“I cleared Typewriting Junior English with Distinction in the Aug. 2023 Exam after being taught by this institution. The staff taught me well and were very keen on clarifying each one's doubts without any hesitation. Had a wonderful learning experience with this institution. Thank you. I hope soon Shorthand Classes will also be made available, useful for government exam aspirants.”</p>
+                        <div class="author">
+                            <span class="category">Best Student</span>
+                            <h4>Muthu Kumar K</h4>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <p>“Absolutely the Best Computer Training I have ever attended.Your classes are always so much fun!This course is useful. The trainer made the course very enjoyable and made sure to answer any questions I had during the class. Thank you very much.Such a great class. Thank you so much!!”</p>
+                        <div class="author">
+                            <span class="category">Best Student</span>
+                            <h4>Nishant</h4>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <p>“This place is excellent for anyone looking to master typewriting and computer skills. The instructors are knowledgeable and patient, the curriculum is well-structured, and the learning environment is supportive. Highly recommended for anyone wanting to enhance their skills and they 25 years of experience and the staffs are interactive and teaching perfectly👍👍”</p>
+                        <div class="author">
+                            <span class="category">University Student</span>
+                            <h4>Dragon Lord Luffy</h4>
+                        </div>
+                    </div>
+                    <div class="item">
+                      <p>“I was very satisfied with this typing institution. The staffs are very kind and encouraged me. They cleared the doubts at anytime. They motivate me and trained me in a best way in a short time. Thanks a lot for each and every staff. Always be rocking.”</p>
+                      <div class="author">
+                          <span class="category">University Student</span>
+                          <h4>C Mahesh</h4>
+                      </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+  <div class="section events" id="events">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <div class="section-heading">
+            <h6>Schedule</h6>
+            <h2>Upcoming Events</h2>
+          </div>
+        </div>
+        <div class="col-lg-12 col-md-6">
+          <div class="item">
+            <div class="row">
+              <div class="col-lg-3">
+                <div class="image">
+                  <img src="assets/images/event-01.jpg" alt="">
+                </div>
+              </div>
+              <div class="col-lg-9">
+                <ul>
+                  <li>
+                    <span class="category">AI Courses 2025</span>
+                    <h4>Summer Batch</h4>
+                  </li>
+                  <li>
+                    <span>Date:</span>
+                    <h6>April 2025</h6>
+                  </li>
+                  <li>
+                    <span>Duration:</span>
+                    <h6>75+ Hours</h6>
+                  </li>
+                  <li>
+                    <span>Enroll Now</span>
+                  </li>
+                </ul>
+                <a href="#"><i class="fa fa-angle-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-12 col-md-6">
+          <div class="item">
+            <div class="row">
+              <div class="col-lg-3">
+                <div class="image">
+                  <img src="assets/images/event-02.jpg" alt="">
+                </div>
+              </div>
+              <div class="col-lg-9">
+                <ul>
+                  <li>
+                    <span class="category">Programming</span>
+                    <h4>Python & Java Courses</h4>
+                  </li>
+                  <li>
+                    <span>Date:</span>
+                    <h6>April 2025</h6>
+                  </li>
+                  <li>
+                    <span>Duration:</span>
+                    <h6>75+ Hours</h6>
+                  </li>
+                  <li>
+                    <span>Enroll Now</span>
+                  </li>
+                </ul>
+                <a href="#"><i class="fa fa-angle-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-12 col-md-6">
+          <div class="item">
+            <div class="row">
+              <div class="col-lg-3">
+                <div class="image">
+                  <img src="assets/images/event-03.jpg" alt="">
+                </div>
+              </div>
+              <div class="col-lg-9">
+                <ul>
+                  <li>
+                    <span class="category">Convocation</span>
+                    <h4>Graduation Day</h4>
+                  </li>
+                  <li>
+                    <span>Date:</span>
+                    <h6>Announced Soon</h6>
+                  </li>
+                  <li>
+                    <span>Duration:</span>
+                    <h6>3 Hours</h6>
+                  </li>
+                  <li>
+                    <span>Join us</span>
+                  </li>
+                </ul>
+                <a href="#"><i class="fa fa-angle-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="contact-us section" id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6  align-self-center">
+          <div class="section-heading">
+            <h6>Contact Us</h6>
+            <h2>Feel free to contact us anytime</h2>
+            <p>"Have questions or need assistance? We're here to help! Reach out to us for inquiries, support, or collaboration opportunities. Your feedback matters, and we’re committed to providing the best service possible. Let’s connect!"</p>
+            <div class="special-offer">
+              <span class="offer">off<br><em>50%</em></span>
+              <h6>Valid: <em>24 April 2025</em></h6>
+              <h4>Special Offer <em>50%</em> OFF!</h4>
+              <a href="#"><i class="fa fa-angle-right"></i></a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-lg-6">
+          <div class="contact-us-content">
+            <form id="contact-form" onsubmit="sendWhatsApp(event)">
+              <div class="row">
+                <div class="col-lg-12">
+                  <fieldset>
+                    <input type="name" name="name" id="name" placeholder="Your Name..." autocomplete="on" required>
+                  </fieldset>
+                </div>
+                <div class="col-lg-12">
+                  <fieldset>
+                    <input type="text" name="email" id="email"  placeholder="Your Query on" required="">
+                  </fieldset>
+                </div>
+                <div class="col-lg-12">
+                  <fieldset>
+                    <textarea name="message" id="message" placeholder="Your Message"></textarea>
+                  </fieldset>
+                </div>
+                <div class="col-lg-12">
+                  <fieldset>
+                    <button type="submit" id="form-submit" class="orange-button">Send Message on WhatsApp</button>
+                  </fieldset>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Update the footer section -->
+  <footer>
+    <div class="container">
+      <div class="col-lg-12">
+        <p>Copyright © 2025 Technet Soft Systems. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/js/isotope.min.js"></script>
+  <script src="assets/js/owl-carousel.js"></script>
+  <script src="assets/js/counter.js"></script>
+  <script src="assets/js/custom.js"></script>
+  <script>
+function sendWhatsApp(event) {
+    event.preventDefault();
+    
+    // Get form values
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const message = document.getElementById('message').value;
+    
+    // Format the message
+    const formattedMessage = 
+        `*New Enquiry from Technet Website*%0a
+        --------------------------%0a
+        *Name:* ${name}%0a
+        *Subject:* ${email}%0a
+        *Message:* ${message}%0a
+        --------------------------%0a`;
+    
+    // Create WhatsApp URL with formatted message
+    const whatsappURL = `https://wa.me/916380359739?text=${formattedMessage}`;
+    
+    // Open WhatsApp in new window
+    window.open(whatsappURL, '_blank');
+    
+    // Reset form
+    document.getElementById('contact-form').reset();
+}
+</script>
+
+  </body>
+</html>
